@@ -17,4 +17,10 @@ header {
 nav {
     display: flex;
     -ms-flex-align: end;
+    list-style: none;
 }
+
+nav ul {
+    padding: 0;
+}
+
