@@ -1,3 +1,8 @@
+:root{
+    --larger-project-width: 900px;
+    --smaller-project-padding: 10px;
+}
+
 * { 
     box-sizing: border-box;
     background-color: #5E3023;
@@ -14,6 +19,12 @@ header {
     color: #DAB49D;
 }
 
+@media screen and (max-width:500px) {
+    header {
+        padding: 10px;
+    }
+}
+
 nav {
     display: flex;
     -ms-flex-align: end;
@@ -24,3 +35,41 @@ nav ul {
     padding: 0;
 }
 
+h1 {
+    font-size: 30px;
+}
+
+.email-link {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.tiaknits {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    border-radius: 25% 25% 0 0;
+}
+
+.project-a img {
+    max-width: var(--larger-project-width);
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.smaller-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.projects {
+    padding: var(--smaller-project-padding);
+}
+
+.projects img {
+    max-width: calc(var(--larger-project-width) / 3 - var(--smaller-project-padding) *2 );
+    width: 100%;
+    height: auto;
+}
