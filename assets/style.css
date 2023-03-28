@@ -1,0 +1,20 @@
+* { 
+    box-sizing: border-box;
+    background-color: #5E3023;
+    color: #F3E9DC;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 60px;
+    text-align: end;
+    color: #DAB49D;
+}
+
+nav {
+    display: flex;
+    -ms-flex-align: end;
+}
